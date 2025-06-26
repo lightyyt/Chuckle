@@ -46,7 +46,7 @@ The message below this is the only thing you will respond to. NOTHING ELSE:
 
 filter = [
 "shiit","shiiit","shiiiit","shiiiiit","shiiiiiit","shiiiiiiit","shiiiiiiiit","shiiiiiiiiit","shiiiiiiiiiit",
-"porn", "p*rn", "po*n", "p**no", "p*do", "pedo", "pedophil","pe*o", "*orn", "por*",
+" porn", " p*rn", " po*n", " p**no", " p*do", "pedo", " pedophil","pe*o", "*orn", "por*",
 "where you live",
 "kill your ",
 "a dick", "d*ck", "di*k", "cock", "c*ck", "co*k",
@@ -66,7 +66,7 @@ filter = [
 "tw*t",
 "motherfucker","motherf*cker","motherf**ker",
 "asshole","a**hole","a***ole","as**ole","as*hole","assh*le", "a*shole",
-"ass", "a*s", 
+" ass", " a*s ", " ass ",
 "mee6", "pee6", "meesix","peesix", "mee six", "pee six",
 "bullshit", "bullsh*t", "bulls*it", "b*llsh*t", "bullsh1t", "bu77sh1t", "b***sh*t", "b******t", "bull***t", "b*lls**t",
 "shit", "sh1t", "sh*t", "s*it", "shi*", "s*1t", "sh1*", "s**t",

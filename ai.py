@@ -1,4 +1,5 @@
 from google import genai
+from google.genai.errors import ServerError
 import os
 from dotenv import load_dotenv
 from bot_payload import *
@@ -79,7 +80,12 @@ def chat(userid, message, username,print_unf=True):
         sessInfo=f"-# Session: global\n"
     elif PRINT_SESSIONS_ALWAYS:
         sessInfo=f"-# Session: {sessionid}\n"
-    message = chat.send_message(setup_payload(userid,username,features)+message).text
+    try:
+        message = chat.send_message(setup_payload(userid,username,features)+message).text
+    except ServerError as e:
+        message = "**[AI ERROR]** The Google Gemini Servers might be overloaded. Please try again Later! `Likely: HTTP Error Code 503`"
+    except:
+        message = "**[GENERAL ERROR]** Something went HORRIBLY wrong! Please report this to Lighty ASAP! ||Thanks >^-^<||"
     unf = message+""
     if print_unf: print("> "+message)
     if filtered:
